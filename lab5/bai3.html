@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column;     
+            }
+    .buton{
+        width: 100px;
+        background-color: #FCC107;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+    }
+</style>
+<body>
+   <p id="doan-van"> day la doan van can thay doi kich thuoc </p>
+   <button class="buton" id="tang-kich-thuoc" onclick="tangKichThuoc()">Tang kich thuoc </button>
+   <button class="buton">Giam kich thuoc</button>
+   <script>
+    let fontSize = 16;
+    function tangKichThuoc(){
+        let phantuTangKichThuoc = document.getElementById('tang-kich-thuoc')
+        let phantuDoanVan = document.getElementById('doan-van')
+        fontSize = fontSize + 1
+        phantuDoanVan.style.fontSize = fontSize +'px'
+    }
+
+    //let phantuGiamKichThuoc = document.getElementById('giam-kich-thuoc')
+   </script>
+</body>
+</html>
